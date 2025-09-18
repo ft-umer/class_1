@@ -8,16 +8,38 @@
             }
             
             table, table th,table td{
-                border:solid 1px black;
-                border-collapse: collapse;
+             
                 padding: 5px;
-
+border-collapse: collapse;
             }
             
+          
+           
+         
+           
+            table th{
+               padding: 10px;
+            
+           }
+            
             table{
-                background-color: aqua;
+              
                 width: 30%;
+                text-align: left;
+                color: gray;
             }
+            
+            tr{
+                border-bottom: 1px solid black;
+            }
+            
+            tr:hover{
+                background-color: blue;
+                color: white;
+            }
+           
+         
+           
             
         </style>
     </head>
@@ -84,15 +106,20 @@
 
         <h2>Tables</h2>
         <table>
-            <tr>
-                <th colspan="3">Description</th>
+        <colgroup>
+        <col span="2" style="background-color: aquamarine;">
+        </colgroup>
+            <tr class="first_tr">
+                <th>Name</th>
+                <th>Marks</th>
+                <th>roll no</th>
             </tr>
-            <tr>
+            <tr id="second">
                 <td>Ali</td>
                 <td>Ahmed</td>
                 <td>Fatima</td>
             </tr>
-            <tr>
+            <tr class="first_tr">
                 <td>1</td>
                 <td>2</td>
                 <td>3</td>
