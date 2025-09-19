@@ -1,21 +1,20 @@
 <html>
     <head>
         <title>Class1</title>
-
         <style>
-            ul{
-                list-style-type: none;
-            }
+        /* List */
+           .ul{
+               list-style-type:none;
+           }
+            
+            /* Tables */
             
             table, table th,table td{
              
                 padding: 5px;
 border-collapse: collapse;
+border-bottom: 1px solid black;
             }
-            
-          
-           
-         
            
             table th{
                padding: 10px;
@@ -29,9 +28,7 @@ border-collapse: collapse;
                 color: gray;
             }
             
-            tr{
-                border-bottom: 1px solid black;
-            }
+            
             
             tr:hover{
                 background-color: blue;
@@ -39,61 +36,99 @@ border-collapse: collapse;
             }
            
          
-           
+           .break{
+               border-bottom: none;
+           }
             
+            .para{
+                width: 50%;
+            }
+            
+            .parent{
+                width: 90%;
+                float: left;
+            }
+            
+            .second_parent{
+                width: 10%;
+                float: right;
+            }
         </style>
     </head>
     <body>
-        <h1>heading 1 </h1>
-        <h2>heading 2</h2>
-        <h6>paragraph 1</h6>
 
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
-            <br>
-            similique nobis quasi harum assumenda reiciendis debitis saepe cum
-            <br>
-            quae soluta! At aliquam iure obcaecati tempora officiis vero <br>
-            quibusdam ipsa cumque?</p>
+        <div>
+            <div class="parent">
+                <div>
+                    <h1>heading 1 </h1>
+                    <h2>heading 2</h2>
+                    <h6>paragraph 1</h6>
+                </div>
 
-        <span>heading 3</span>
-        <span>heading 5</span>
+                <div>
+                    <div class="para">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit.
+                            Dolorem
 
-        <h2>Links</h2>
-        <h3>Absolute Links</h3>
-        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-        <h3>Relative Links</h3>
-        <a href="/class2.html" target="_blank">Class 2</a>
+                            similique nobis <span
+                                style="color: red;">quasi</span> harum assumenda
+                            reiciendis debitis
+                            saepe
+                            cum
 
-        <h2>Lists</h2>
-        <h3>Unordered List</h3>
-        <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-        </ul>
+                            quae soluta! At aliquam iure obcaecati tempora
+                            officiis vero
+                            quibusdam ipsa cumque?</p>
+                    </div>
+                </div>
+                <h2>Links</h2>
+                <h3>Absolute Links</h3>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a href="#">Test</a>
+                <h3>Relative Links</h3>
+                <a href="/class2.html" target="_blank">Class 2</a>
 
-        <h3>Ordered List</h3>
+                <!-- Lists -->
+                <h2>Lists</h2>
+                <h3>Unordered List</h3>
+                <ul class="ul">
+                    <li>
+                        item 1 <img src="/images/bg.jpg" alt height="30"
+                            width="30">
+                        <ul>
+                            <li>subitem</li>
+                        </ul></li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+                <hr>
+                <h3>Ordered List</h3>
 
-        <ol>
-            <li> <dl>
-                    <dt>Coffee</dt>
-                    <dd>A hot drink made from roasted and ground seeds of the
-                        coffee plant.</dd>
-                </dl></li>
-            <li><dl>
-                    <dt>tea</dt>
-                    <dd>A hot drink made by infusing the dried, crushed leaves
-                        of the tea plant in boiling water.</dd>
-                </dl></li>
-            <li><dl>
-                    <dt>Milk</dt>
-                    <dd>A white liquid produced by the mammary glands of
-                        mammals.</dd>
-                </dl></li>
-            <li>item 3</li>
-        </ol>
+                <ol>
+                    <li> <dl>
+                            <dt>Coffee</dt>
+                            <dd>A hot drink made from roasted and ground seeds
+                                of the
+                                coffee plant.</dd>
+                        </dl></li>
+                    <li><dl>
+                            <dt>tea</dt>
+                            <dd>A hot drink made by infusing the dried, crushed
+                                leaves
+                                of the tea plant in boiling water.</dd>
+                        </dl></li>
+                    <li><dl>
+                            <dt>Milk</dt>
+                            <dd>A white liquid produced by the mammary glands of
+                                mammals.</dd>
+                        </dl></li>
+                    <li>item 3</li>
+                </ol>
 
-        <h3>Description List</h3>
+                <hr>
+
+                <!-- <h3>Description List</h3>
 
         <dl>
             <dt>Coffee</dt>
@@ -102,35 +137,61 @@ border-collapse: collapse;
             <dt>tea</dt>
             <dd>A hot drink made by infusing the dried, crushed leaves of the
                 tea plant in boiling water.</dd>
-        </dl>
+        </dl> -->
 
-        <h2>Tables</h2>
-        <table>
-        <colgroup>
-        <col span="2" style="background-color: aquamarine;">
-        </colgroup>
-            <tr class="first_tr">
-                <th>Name</th>
-                <th>Marks</th>
-                <th>roll no</th>
-            </tr>
-            <tr id="second">
-                <td>Ali</td>
-                <td>Ahmed</td>
-                <td>Fatima</td>
-            </tr>
-            <tr class="first_tr">
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>54</td>
-                <td>30</td>
-                <td>95</td>
-            </tr>
+            </div>
 
-        </table>
+            <div class="second_parent">
 
+                <!-- Tables -->
+                <h2>Tables</h2>
+                <table>
+
+                    <tr class="first_tr">
+                        <th></th>
+                        <th>1am - 2pm</th>
+                        <th>3am - 4pm</th>
+                        <th class="break">B</th>
+                        <th>5am - 6pm</th>
+
+                    </tr>
+                    <tr id="second">
+                        <td>Monday</td>
+                        <td>Maths</td>
+                        <td>Eng</td>
+                        <td class="break">R</td>
+                        <td>Urdu</td>
+                    </tr>
+                    <tr class="first_tr">
+                        <td>Tuesday</td>
+                        <td>Science</td>
+                        <td>Physics</td>
+                        <td class="break">E</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>54</td>
+                        <td>30</td>
+                        <td class="break">A</td>
+                        <td>95</td>
+                    </tr>
+                </table>
+
+                <h2>Images</h2>
+                <!-- Pictures -->
+                <img src="/images/bg.jpg" alt="test image" height="200"
+                    width="200">
+
+                <h2>Iframe</h2>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3081.531869268939!2d73.0963056750648!3d31.408517152660842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392269802bb0af37%3A0x75b008fae1fed4a7!2zUmV4IENpdHkgUGxhemEg2LHbjNqp2LMg2LPZuduMINm-2YTYp9iy24E!5e1!3m2!1sen!2s!4v1758284052495!5m2!1sen!2s"
+                    width="600" height="200" style="border:0;" allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
     </body>
 </html>

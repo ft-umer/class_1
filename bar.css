@@ -1,0 +1,161 @@
+*{
+		list-style: none;
+		text-decoration: none;
+
+}
+
+
+
+#main{
+	border: 2px solid black;
+
+	margin: 0 auto;
+	width: 1000px;
+	
+	background-color: skyblue;
+}
+
+
+
+#header h1{
+	font-family:serif;
+	font-size: 50px;
+	line-height: 90px;
+ 	color: white;
+ 	padding-left:30px ;
+	margin: 0;
+}
+
+
+
+#header{
+	width: 1000px;
+	height: 100px;
+	background-color: darkblue;
+	padding: 0;
+	margin-bottom: 0px;
+}
+
+
+
+#menu{
+	width: 1003px;
+	height: 55px;
+	float: left;
+	background-color:black;
+	padding: 0;
+	position: sticky;
+	
+}	
+
+
+
+#menu ul{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#menu ul li {
+	display: inline-block;
+	float: left;
+	line-height: 50px;
+}
+
+
+
+#menu ul li a{
+	text-decoration: none;
+	display: block;
+	color: white;
+	padding: 6px 20px;
+
+}
+
+
+
+#menu ul li a:hover{color: red}
+
+#menu ul li ul li {display: none;}
+
+#menu ul li:hover ul li  {display:block ;}
+
+
+
+
+
+#content{
+	padding-left:20px;
+	padding-bottom: 40px;
+	width: 800px;
+
+	float:left;}
+
+
+
+
+#content h2{
+
+		font-size: 35px;
+		font-family:arial ;
+}
+
+
+
+#content p{
+	font-family:arial;
+}
+
+
+
+#sidebar{
+	padding-bottom:0px;
+
+	height: 1000px;
+	width: 180px;
+	float: right;
+	
+	background-color:rosybrown;
+	text-align: center;
+}
+
+
+
+#sidebar li{
+	padding: 60px 30px;
+	color: white;
+}
+ul li a:hover{color: yellow;}
+
+
+
+ ul li a{
+	color:green;
+	text-align: center;
+	font-size: 20px;
+}
+
+
+
+  
+
+
+
+
+
+#footer{
+	width: 820px;
+	height: 212px;
+	float: bottom;
+	background-color:lightgray;
+	text-align: center;
+	padding: 5px 90px;
+	clear: both;
+	font-size: 45px;
+	font-family: serif;
+
+
+
+
+
