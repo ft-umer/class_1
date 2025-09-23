@@ -7,9 +7,11 @@
 <body>
     <h1>Forms</h1>
     <form action="">
+   <fieldset>
+   <legend>Testing form</legend>
     <label for="name">Name: </label>
     <br>
-    <input type="text" name="username" id="name" placeholder="enter your name...">
+    <input type="text" name="username" id="name" value="first name" disabled>
     <br>
     <label for="email">Email: </label>
     <br>
@@ -52,8 +54,35 @@
     <br>
     <input type="password" name="" id="" placeholder="********">
     <br><br>
+    <label for="">Date:</label>
+    <br>
+    <input type="date" name="" id="">
+    <br>
+    <label for="">Date&Time:</label>
+    <br>
+    <input type="datetime-local" name="" id="">
+    <br><br>
+    <input type="hidden" value="id" id="">
+    <br><br>
+    <input type="url">
+    <br>
+    <label for="">Select Element</label>
+    <br>
+    <select multiple name="cars" id="">
+    <option selected>Select the car from following</option>
+    <option value="Toyata">Toyata</option>
+    <option value="Mehran">Mehran</option>
+    <option value="Corolla">Corolla</option>
+    <option value="">Prius</option>
+    </select>
+    <br><br>
+    <label for="">Write about yourself</label><br>
+    <textarea rows="1" cols="20" name="" id=""></textarea>
+    <br>
+    <br>
     <button type="submit">SignUp</button>
     <button type="reset">Reset</button>
+   </fieldset>
     </form>
 </body>
 </html>
